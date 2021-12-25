@@ -7,7 +7,7 @@ spring:
         url: http://localhost:8084
   cloud:
     config:
-      label: master
+#      label: dev
       server:
         git:
 #          uri: https://gitee.com/the-father-of-great-god-wang/spring-cloud-config.git
