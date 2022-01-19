@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: itoken-config
+  boot:
+    admin:
+      client:
+#        url: http://localhost:8084
+        url: http://192.168.76.128:8084
+  cloud:
+    config:
+#      label: dev
+      server:
+        git:
+#          uri: https://gitee.com/the-father-of-great-god-wang/spring-cloud-config.git
+          uri: https://github.com/cyfyang/itoken-config.git
+#          uri: https://github.com/cyfyang/microservicecloud-config.git
+          search-paths: respo
+#          username: cyf_yang@163.com
+#          password: xxxxxx
+  zipkin:
+#    base-url: http://localhost:9411
+    base-url: http://192.168.76.128:9411
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.76.128:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
