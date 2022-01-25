@@ -7,7 +7,7 @@ spring:
         url: http://localhost:8084
   cloud:
     config:
-#      label: dev
+      label: master    # 配置仓库的分支
       server:
         git:
 #          uri: https://gitee.com/the-father-of-great-god-wang/spring-cloud-config.git

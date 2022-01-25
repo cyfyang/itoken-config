@@ -8,7 +8,7 @@ spring:
         url: http://192.168.76.128:8084
   cloud:
     config:
-#      label: dev
+      label: dev
       server:
         git:
 #          uri: https://gitee.com/the-father-of-great-god-wang/spring-cloud-config.git
