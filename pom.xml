@@ -67,7 +67,7 @@
         </dependency>
         <!-- Spring Boot Admin End -->
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.76</version>
@@ -82,8 +82,8 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.13.0</version>
-            <!--2.11.x运行不会报错（结果跟fastjson一致），2.12.x运行报错-->
-        </dependency>
+            &lt;!&ndash;2.11.x运行不会报错（结果跟fastjson一致），2.12.x运行报错&ndash;&gt;
+        </dependency>-->
     </dependencies>
 
     <build>
