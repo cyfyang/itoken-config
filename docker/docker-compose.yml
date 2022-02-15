@@ -6,3 +6,8 @@ services:
     container_name: itoken-config
     ports:
       - 8888:8888
+    networks:
+      - config-network
+
+networks:
+  config-network:
