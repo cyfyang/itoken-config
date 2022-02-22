@@ -18,7 +18,7 @@ server:
   port: 8601
 
 feign:
-  hystrix:
+  circuitbreaker:
     enabled: true
 
 

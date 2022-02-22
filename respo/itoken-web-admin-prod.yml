@@ -18,7 +18,8 @@ server:
   port: 8601
 
 feign:
-  hystrix:
+#  hystrix:    #2020版此配置已经失效，使用新配置
+  circuitbreaker:
     enabled: true
 
 eureka:
