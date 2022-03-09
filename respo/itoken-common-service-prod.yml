@@ -8,6 +8,8 @@ spring:
 
 
 mybatis:
+  configuration:
+    cached-enabled: true
   type-aliases-package: com.lucifer.itoken.common.domain
   mapper-locations: classpath:mapper/*.xml
 
