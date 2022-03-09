@@ -9,7 +9,7 @@ spring:
 
 mybatis:
   configuration:
-    cached-enabled: true
+    cache-enabled: true
   type-aliases-package: com.lucifer.itoken.common.domain
   mapper-locations: classpath:mapper/*.xml
 
