@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: itoken-web-admin
+  boot:
+    admin:
+      client:
+        url: http://192.168.76.128:8084
+  zipkin:
+    base-url: http://192.168.76.128:9411
+  thymeleaf:
+    cache: false #开发时关闭缓存，不然没法看到实时页面
+    mode:  LEGACYHTML5 #用非严格的html5
+    encodign: UTF-8
+    servlet:
+      context-type: text/html
+
+server:
+  port: 8601
+
+feign:
+#  hystrix:    #2020版此配置已经失效，使用新配置
+  circuitbreaker:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.76.128:8761/eureka/,http://192.168.76.128:8861/eureka/,http://192.168.76.128:8961/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
