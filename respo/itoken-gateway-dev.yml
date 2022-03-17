@@ -3,6 +3,8 @@ spring:
     name: itoken-gateway
   cloud:
     gateway:
+      default-filter:
+        - PreserveHostHeader
       discovery:
         locator:
           enabled: true
