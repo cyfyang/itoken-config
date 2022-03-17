@@ -11,15 +11,15 @@ spring:
           uri: lb://itoken-web-admin
           predicates:
             - Path=/backend/admin/**
-          filters:
-            - StripPrefix=2   #为了达到和zuul一样的路由效果(去除前n个级前缀)
+#          filters:
+#            - StripPrefix=2   #为了达到和zuul一样的路由效果(去除前n个级前缀)
 
         - id: backend-posts
           uri: lb://itoken-web-posts
           predicates:
             - Path=/backend/posts/**
-          filters:
-            - StripPrefix=2
+#          filters:
+#            - StripPrefix=2
 
 server:
   port: 8769
